@@ -32,10 +32,10 @@ const MySkills = () => {
             <div className="mt-16 md:mt-0">
                 {isAboveMediumScreens ? (
                     <div className="relative z-10 ml-20 before:absolute before:-top-10 before:-left-10 before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]">
-                        <img className="z-10" src="./src/scenes/skills-image.png" alt="Skills" />
+                        <img className="z-10" src="./src/skills-image.png" alt="Skills" />
                     </div>
                 ) : (
-                    <img className="z-10" src="./src/scenes/skills-image.png" alt="Skills" />
+                    <img className="z-10" src="./src/skills-image.png" alt="Skills" />
                 )}
             </div>
         </div>

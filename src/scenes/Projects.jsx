@@ -38,7 +38,7 @@ const Project = ({title, links, href, subtitle, to}) => {
                     {subtitle}
                 </p>
             </div>
-            <img src={`./src/scenes/${projectTitle}.jpeg`} alt={projectTitle} />
+            <img src={`./src/${projectTitle}.jpeg`} alt={projectTitle} />
         </motion.div>
     )
 }
