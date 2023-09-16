@@ -35,7 +35,7 @@ const Contact = () => {
                     hidden: {opacity: 0, y: 50},
                     visible: {opacity: 1, y:0},
                 }}>
-                    <img src="./src/assets/contact-image.jpeg" alt="CONTACT" />
+                    <img src="./src/scenes/contact-image.jpeg" alt="CONTACT" />
                 </motion.div>
                 <motion.div className="basis-1/2 mt-10 md:mt-0" initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.5}} transition={{delay: 0.2, duration:0.5}} variants={{
                     hidden: {opacity: 0, y: 50},
