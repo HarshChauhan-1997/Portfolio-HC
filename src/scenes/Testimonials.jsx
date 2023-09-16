@@ -17,7 +17,7 @@ const Testimonials = () => {
                 </p>
                 <LineGradient width="w-2/4"/>
                 <p className="mt-10">
-                    Some, games created by simple html and css using java script. in this games project i practice backtracing, loops and animations updating by java script. if you like you can play.
+                    Some, games created by simple html and css using java script. in this games project i practice backtracing, loops and animations updating by java script. if you like you can play. !Only for Desktops.!
                 </p>
             </motion.div>
 

@@ -18,7 +18,6 @@ const container = {
 };
 
 const projectVariants = {
-    hidden:{opacity: 0, scale: 0.8},
     visible:{opacity: 1, scale: 1}
 };
 
@@ -61,8 +60,9 @@ const Projects = () => {
                     </div>
                 </div>
                 <p className="mt-10 mb-10">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cupiditate odio fuga veniam magni enim..
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cupiditate odio fuga veniam magni enim..
+                    for self development in coding all of this mention projects is explain my journey from starting with simple HTML,CSS and javascript 
+                    to tailwind css, responsive design, javascript logics, Dom manipulation, Oops Concepts, bit manipulations, and then javascript library 
+                    like react js on node.js framework. below is all of this projects.
                 </p>
             </motion.div>
 
