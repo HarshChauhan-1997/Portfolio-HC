@@ -33,7 +33,7 @@ const Navbar =({isTopOfPage, selectedPage, setSelectedPage}) => {
                 </div>
               ) : (
               <button className="rounded-full bg-red p-2" onClick={() => setIsMenuToggle(!isMenuToggle)}>
-                  <img alt='menu-icon' src={'./src/scenes/menu-icon.svg'}/>
+                  <img alt='menu-icon' src='https://drive.google.com/uc?export=view&id=1ArYpijgsge0rNpiYlpSqPiW-yOe152Vk'/>
               </button>)}
 
               {/* MOBILE MENU */}
@@ -42,7 +42,7 @@ const Navbar =({isTopOfPage, selectedPage, setSelectedPage}) => {
                   {/* CLOSE ICONE */}
                   <div className="flex justify-end p-12">
                     <button onClick={() => setIsMenuToggle(!isMenuToggle)}>
-                      <img alt='close-menu' src={'./src/scenes/close-icon.svg'}/>
+                      <img alt='close-menu' src='https://drive.google.com/uc?export=view&id=1u-DuwC7tLnPXirSxXke0W8z63jo5IRHR'/>
                     </button>
                   </div>
 

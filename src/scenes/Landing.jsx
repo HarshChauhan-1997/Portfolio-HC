@@ -13,10 +13,10 @@ const Landing = ({setSelectedPage}) => {
         <div className='md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32'>
             {isAboveMediumScreens ? (
                 <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]">
-                    <img className="hover:filter hover:saturate-200 duration-500 transition ease z-10 w-full max-w-[200px] md:max-w-[500px]" src={"./src/profile-image.png"} alt="Profile" />
+                    <img className="hover:filter hover:saturate-200 duration-500 transition ease z-10 w-full max-w-[200px] md:max-w-[500px]" src="https://drive.google.com/uc?export=view&id=1ibhN7CEBHAehwBPo3lvniSBz_awhyL81" alt="Profile" />
                 </div>
             ) : (
-                <img className="hover:filter hover:saturate-200 duration-500 ease z-10 w-full max-w-[400px] md:max-w-[600px]" src={"./src/profile-image.png"} alt="Profile" />
+                <img className="hover:filter hover:saturate-200 duration-500 ease z-10 w-full max-w-[400px] md:max-w-[600px]" src="https://drive.google.com/uc?export=view&id=1ibhN7CEBHAehwBPo3lvniSBz_awhyL81" alt="Profile" />
             )}
         </div>
 
@@ -30,7 +30,7 @@ const Landing = ({setSelectedPage}) => {
                     <p className="text-5xl font-playfair z-10 text-center md:text-start">
                         Harsh {""}
                         <span className="xs:relative xs:text-deep-blue xs:font-semibold z-20">
-                            <img className="absolute max-w-[250px] -left-[25px] -top-[78px] z-[-1]" src={"./src/brush.png"} alt="brush"/>
+                            <img className="absolute max-w-[250px] -left-[25px] -top-[78px] z-[-1]" src="https://drive.google.com/uc?export=view&id=1uN5JQipMLowLM4Ll1peRPosUQ2_QpbIG" alt="brush"/>
                             Chauhan
                         </span>
                     </p>

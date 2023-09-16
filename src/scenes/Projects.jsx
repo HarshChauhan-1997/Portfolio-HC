@@ -10,7 +10,6 @@ import {
     Link,
   } from "react-router-dom";
 
-
 const container = {
     hidden:{},
     visible:{
@@ -23,7 +22,7 @@ const projectVariants = {
     visible:{opacity: 1, scale: 1}
 };
 
-const Project = ({title, links, href, subtitle, to}) => {
+const Project = ({title, links, href, subtitle, to, GD}) => {
     const projectTitle = title.split(" ").join("-").toLowerCase();
     const overLayStyles =`absolute h-full w-full opacity-0 hover:opacity-90 transition durations-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
 
@@ -38,7 +37,7 @@ const Project = ({title, links, href, subtitle, to}) => {
                     {subtitle}
                 </p>
             </div>
-            <img src={`./src/${projectTitle}.jpeg`} alt={projectTitle} />
+            <img src={GD} alt={projectTitle} />
         </motion.div>
     )
 }
@@ -74,35 +73,35 @@ const Projects = () => {
                     <div className="flex justify-center items-center text-center p-10 bg-red max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
                         BEAUTIFUL USER INTERFACES
                     </div>
-                    <Project title="Project 1"
+                    <Project title="Project 1" GD="https://drive.google.com/uc?export=view&id=1C3hxxeEvlIzazQH6tT8ZZbhtiIip9iYW"
                     subtitle="Netflix Project: Build by using tailwind css library. Main focus to learn tailwind css as well as make responsive web by using tailwind."
                     to="/Netflix"
                     />
-                    <Project title="Project 2" links="Click Me"
+                    <Project title="Project 2" links="Click Me" GD="https://drive.google.com/uc?export=view&id=1ayaixKBg43nC2eADpSER1_IOYCPOAhjk"
                     subtitle="Amazon Project: Build by using simple HTML & CSS. Main focus to learn website design by using simple HTML & CSS. first project."
                     href="https://amazon-clone-liart-one.vercel.app/"
                     />
                     
                     {/* ROW-2 */}
-                    <Project title="Project 3"
+                    <Project title="Project 3" GD="https://drive.google.com/uc?export=view&id=131TZF_z6LSxzwdoz3kiqqNPYgHByIdbT"
                     subtitle="Note Taking: in this project use simple java script to create logical properties with html & css combinations."
                     to="/NoteTaking"
                     />
-                    <Project title="Project 4" links="Click Me"
+                    <Project title="Project 4" links="Click Me" GD="https://drive.google.com/uc?export=view&id=1_h637jdOwJcLibajYfUDjdlim-MEhFqx"
                     subtitle="ToDo List: In this project use java script to create logical properties with html & css combinations as well as using local storage to save data."
                     href="https://to-do-list-ten-kappa.vercel.app/"
                     />
-                    <Project title="Project 5" links="Click Me"
+                    <Project title="Project 5" links="Click Me" GD="https://drive.google.com/uc?export=view&id=1FbcvYP4rxMz9EBswT00OQ09bYCy3m-wL"
                     subtitle="Animated Web: In this project use css to build animated properties of web as well as use java script to create animated properties."
                     href="https://animated-website-lilac.vercel.app/"
                     />
 
                     {/* ROW-3 */}
-                    <Project title="Project 6"
+                    <Project title="Project 6" GD="https://drive.google.com/uc?export=view&id=1017NT4pTEk_Ubq6Q08cXjEv2-nYjAzID"
                     subtitle="Logical Project: Random Password Generation and RandomColor Generation Projects : Main focus of those projects are to build batter understanding of the hooks of react, state changes, virtual dom, fiber and logical programming"
                     to="/Logical/1"
                     />
-                    <Project title="Project 7"
+                    <Project title="Project 7" GD="https://drive.google.com/uc?export=view&id=1Ww-7buV_zO6ikYLgnOV-zX-zlKnROC96"
                     subtitle="Portfolio: finally, after all of this project time to build portfolio. for this i use ref: ${} to build this portfolio. by this project i properly understand of react-dom and fiber modules. using parameter's in functions and hooks."
                     to="/"
                     />
