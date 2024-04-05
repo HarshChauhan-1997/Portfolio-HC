@@ -3,6 +3,7 @@ import UseMediaQuery from '../Hooks/UseMediaQuery';
 import LineGradient from '../Component/LineGradient';
 import { motion } from 'framer-motion';
 import {useForm} from 'react-hook-form';
+import ContactImg from "../assets/contact-image.jpeg"
 
 const Contact = () => {
     const {register, trigger, formState: {errors}} = useForm();
@@ -35,7 +36,7 @@ const Contact = () => {
                     hidden: {opacity: 0, y: 50},
                     visible: {opacity: 1, y:0},
                 }}>
-                    <img src={"https://drive.google.com/uc?export=view&id=1yWbe3xBLAeGiThlq2KB_B4Hfc9PVBQJi"} alt="CONTACT" />
+                    <img src={ContactImg} alt="CONTACT" />
                 </motion.div>
                 <motion.div className="basis-1/2 mt-10 md:mt-0" initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.5}} transition={{delay: 0.2, duration:0.5}} variants={{
                     hidden: {opacity: 0, y: 50},

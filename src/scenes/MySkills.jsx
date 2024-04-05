@@ -2,6 +2,7 @@ import React from 'react'
 import UseMediaQuery from '../Hooks/UseMediaQuery';
 import LineGradient from '../Component/LineGradient';
 import { motion } from 'framer-motion';
+import skills from "../assets/skills-image.png"
 
 const MySkills = () => {
     const isAboveMediumScreens = UseMediaQuery('(min-width:1060px)');
@@ -21,21 +22,21 @@ const MySkills = () => {
                 </p>
                 <LineGradient width="w-1/3"/>
                 <p className="mt-10 mb-7">
-                    <span className="text-blue">HTML5, CSS3, JavaScript</span>{" | "}
-                    <span className="text-red">Responsive Web Design</span>{" | "}
-                    <span className="text-yellow">Basic knowledge of front-end libraries and frameworks</span>{" | "}
-                    <span className="text-blue">Problem-solving and logical thinking</span>{" | "}
-                    <span className="text-red">Strong communication and collaboration skills</span>{" | "}
-                    <span className="text-yellow">Eagerness to learn and adapt to new technologies</span>
+                    <span className="text-blue">React-JS</span>{" | "}
+                    <span className="text-red">React-Native</span>{" | "}
+                    <span className="text-yellow">HTML5, CSS3, JavaScript, Tailwind</span>{" | "}
+                    <span className="text-blue">API, Redux, Redux_Saga, GraphQL</span>{" | "}
+                    <span className="text-red">Node.js, MongoDB</span>{" | "}
+                    <span className="text-yellow">Xcode, Android Studio</span>
                 </p>
             </motion.div>
             <div className="mt-16 md:mt-0">
                 {isAboveMediumScreens ? (
                     <div className="relative z-10 ml-20 before:absolute before:-top-10 before:-left-10 before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]">
-                        <img className="z-10" src="https://drive.google.com/uc?export=view&id=14WnhQbYtjcgUFakPk1dT0V3sgc7Q1byG" alt="Skills" />
+                        <img className="z-10" src={skills} alt="Skills" />
                     </div>
                 ) : (
-                    <img className="z-10" src="https://drive.google.com/uc?export=view&id=14WnhQbYtjcgUFakPk1dT0V3sgc7Q1byG" alt="Skills" />
+                    <img className="z-10" src={skills} alt="Skills" />
                 )}
             </div>
         </div>
@@ -49,12 +50,12 @@ const MySkills = () => {
                     <div className="relative h-32 z-10">
                         <div className="">
                             <p className="font-playfair font-semibold text-5xl">01</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3">Skills Development</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">React-JS / React-Native</p>
                         </div>
                         <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]"/>
                     </div>
                     <p className="mt-5">
-                    I am actively working on enhancing my skills through online courses and self-study. My focus is on mastering front-end technologies, deepening my knowledge of JavaScript, and exploring popular libraries and frameworks like React and Angular. (Reference: <a className="text-blue underline" target="_blank" href="https://www.youtube.com/@ApnaCollegeOfficial">Apna College</a>, <a className="text-blue underline" target="_blank" href="https://www.youtube.com/@chaiaurcode">Chai aur code</a>, <a className="text-blue underline" target="_blank" href="https://www.youtube.com/@thesheryianscodingschool">The sheryians coding school</a>)
+                        I have extensive experience in React and React Native, having contributed to projects such as a voice clone web application and logic development in React JS, as well as the development of 'Zive: Health' and 'prev: salon' app. Additionally, I created my own MovieApp using React Native, honing my logical thinking, coding standards, and design skills. Throughout these endeavors, I adeptly utilized tools like Jira, Git, and Bitbucket. (Git-repo: <a className="text-blue underline" target="_blank" href="https://github.com/HarshChauhan-1997/MovieApp">MovieApp</a>, <a className="text-blue underline" target="_blank" href="https://github.com/HarshChauhan-1997/Portfolio-HC">Portfolio</a>)
                     </p>
             </motion.div>
 
@@ -66,12 +67,12 @@ const MySkills = () => {
                     <div className="relative h-32 z-10">
                         <div className="">
                             <p className="font-playfair font-semibold text-5xl">02</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3">Innovative</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">API / Redux / Redux-Saga / GraphQL</p>
                         </div>
                         <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]"/>
                     </div>
                     <p className="mt-5">
-                    I am an innovative web developer with a relentless passion for pushing the boundaries of what's possible on the web. With a proven track record of creating unique and engaging web experiences, I thrive on leveraging cutting-edge technologies and creative thinking to bring concepts to life. My goal is to deliver web solutions that not only meet but exceed client expectations, setting new standards for innovation and user engagement.
+                        I have actively engaged in API integration, proficiently employing methods such as GET, POST, PUT, and DELETE. Utilizing tools like Postman, I ensured seamless testing and validation of APIs. Furthermore, I adeptly managed API calls through Redux and middleware, primarily leveraging Redux-Saga. My experience predominantly revolves around GraphQL APIs, where I've demonstrated proficiency in data fetching and manipulation for efficient application development.
                     </p>
             </motion.div>
 
@@ -83,12 +84,12 @@ const MySkills = () => {
                     <div className="relative h-32 z-10">
                         <div className="">
                             <p className="font-playfair font-semibold text-5xl">03</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3">Imaginative</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">Xcode / Android Studio</p>
                         </div>
                         <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]"/>
                     </div>
                     <p className="mt-5">
-                    I am an imaginative web developer who combines a flair for creativity with strong technical skills to craft web experiences that captivate and inspire. With a background in both design and development, I thrive on pushing the boundaries of what's possible on the web. My passion lies in turning innovative ideas into visually stunning and interactive realities, creating digital experiences that leave a lasting impact.
+                        My portfolio also encompasses experience with industry-standard build tools such as Xcode for iOS development and Android Studio for Android applications. I have adeptly navigated Xcode's TestFlight and certification processes, ensuring seamless testing and deployment of iOS apps. Additionally, my proficiency extends to the Google Play Console, where I've successfully uploaded test apps for beta (internal testing) as well as production releases, guaranteeing a smooth user experience across platforms.
                     </p>
             </motion.div>
         </div>

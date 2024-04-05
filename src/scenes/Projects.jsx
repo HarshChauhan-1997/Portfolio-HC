@@ -1,14 +1,10 @@
 import React from 'react'
 import LineGradient from '../Component/LineGradient';
 import { motion } from 'framer-motion';
-import Netflix from '../Projects/Netflix/Netflix';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {
-    BrowserRouter,
-    Routes,
-    Route,
     Link,
   } from "react-router-dom";
+import {projects} from "../assets/img.js"
 
 const container = {
     hidden:{},
@@ -30,7 +26,7 @@ const Project = ({title, links, href, subtitle, to, GD}) => {
             <div className={overLayStyles}>
                 <p className="text-2xl font-playfair underline">
                     <Link to={to}>{title}</Link>{" "}
-                    <a className="text-sm font-bold bg-red text-white rounded-[5px]" href={href} target="_blank">{links}</a>
+                    <a className="text-sm font-bold bg-red text-white rounded-[5px]" href={href} target="_blank" rel="noreferrer">{links}</a>
                 </p>
                 <p className="mt-7">
                     {subtitle}
@@ -73,35 +69,35 @@ const Projects = () => {
                     <div className="flex justify-center items-center text-center p-10 bg-red max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
                         BEAUTIFUL USER INTERFACES
                     </div>
-                    <Project title="Project 1" GD="https://drive.google.com/uc?export=view&id=1C3hxxeEvlIzazQH6tT8ZZbhtiIip9iYW"
+                    <Project title="Project 1" GD={projects.project_1}
                     subtitle="Netflix Project: Build by using tailwind css library. Main focus to learn tailwind css as well as make responsive web by using tailwind."
                     to="/Netflix"
                     />
-                    <Project title="Project 2" links="Click Me" GD="https://drive.google.com/uc?export=view&id=1ayaixKBg43nC2eADpSER1_IOYCPOAhjk"
+                    <Project title="Project 2" links="Click Me" GD={projects.project_2}
                     subtitle="Amazon Project: Build by using simple HTML & CSS. Main focus to learn website design by using simple HTML & CSS. first project."
                     href="https://amazon-clone-liart-one.vercel.app/"
                     />
                     
                     {/* ROW-2 */}
-                    <Project title="Project 3" GD="https://drive.google.com/uc?export=view&id=131TZF_z6LSxzwdoz3kiqqNPYgHByIdbT"
+                    <Project title="Project 3" GD={projects.project_3}
                     subtitle="Note Taking: in this project use simple java script to create logical properties with html & css combinations."
                     to="/NoteTaking"
                     />
-                    <Project title="Project 4" links="Click Me" GD="https://drive.google.com/uc?export=view&id=1_h637jdOwJcLibajYfUDjdlim-MEhFqx"
-                    subtitle="ToDo List: In this project use java script to create logical properties with html & css combinations as well as using local storage to save data."
-                    href="https://to-do-list-ten-kappa.vercel.app/"
+                    <Project title="Project 4" links="Click Me" GD={projects.project_4}
+                    subtitle="MovieApp: Explore the world of cinema with my React Native movie app, powered by Redux and Redux Saga for advanced state management. Integrated with the TMDB API, it offers personalized recommendations, intuitive navigation, and advanced search options. Bookmark your favorites and enjoy a seamless movie-watching experience on the go."
+                    href="https://drive.google.com/file/d/1wGDC8wYchULuOfz-1BaT7S4e8bXzHYVi/view?usp=sharing"
                     />
-                    <Project title="Project 5" links="Click Me" GD="https://drive.google.com/uc?export=view&id=1FbcvYP4rxMz9EBswT00OQ09bYCy3m-wL"
+                    <Project title="Project 5" links="Click Me" GD={projects.project_5}
                     subtitle="Animated Web: In this project use css to build animated properties of web as well as use java script to create animated properties."
                     href="https://animated-website-lilac.vercel.app/"
                     />
 
                     {/* ROW-3 */}
-                    <Project title="Project 6" GD="https://drive.google.com/uc?export=view&id=1017NT4pTEk_Ubq6Q08cXjEv2-nYjAzID"
+                    <Project title="Project 6" GD={projects.project_6}
                     subtitle="Logical Project: Random Password Generation and RandomColor Generation Projects : Main focus of those projects are to build batter understanding of the hooks of react, state changes, virtual dom, fiber and logical programming"
                     to="/Logical/1"
                     />
-                    <Project title="Project 7" GD="https://drive.google.com/uc?export=view&id=1Ww-7buV_zO6ikYLgnOV-zX-zlKnROC96"
+                    <Project title="Project 7" GD={projects.project_7}
                     subtitle="Portfolio: finally, after all of this project time to build portfolio. for this i use ref: ${} to build this portfolio. by this project i properly understand of react-dom and fiber modules. using parameter's in functions and hooks."
                     to="/"
                     />
