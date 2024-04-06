@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -13,7 +10,7 @@ export default {
         grey: "#ededed",
         "deep-blue": "#010026",
         "dark-grey": "#757575",
-        "opaque-black": "rgba(0,0,0,0.35)"
+        "opaque-black": "rgba(0,0,0,0.35)",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
@@ -25,7 +22,7 @@ export default {
         playfair: ["Playfair Display", "serif"],
         opensans: ["Open Sans", "sans-serif"],
       },
-      content:{
+      content: {
         brush: "url('brush.png')",
         person1: "url('person-1.png')",
         person2: "url('person-2.png')",
@@ -37,8 +34,7 @@ export default {
       xs: "480px",
       sm: "768px",
       md: "1060px",
-    }
+    },
   },
   plugins: [],
 }
-
