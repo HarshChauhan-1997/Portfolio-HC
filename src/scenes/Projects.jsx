@@ -42,7 +42,6 @@ const Project = ({ title, links, href, subtitle, to, GD }) => {
 }
 
 const Projects = () => {
-  const gifStyles = `w-[80%] sm:w-[95%] border-2 border-amber-50 rounded-2xl`
   return (
     <section id="projects" className="pt-48 pb-48 flex flex-col gap-24">
       {/* HEADING */}
