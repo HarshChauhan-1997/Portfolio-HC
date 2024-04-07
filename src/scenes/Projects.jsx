@@ -3,6 +3,7 @@ import LineGradient from "../Component/LineGradient"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 import { projects } from "../assets/img.js"
+import { VideoPlayer } from "../utils/VideoPlayer.jsx"
 
 const container = {
   hidden: {},
@@ -184,11 +185,11 @@ const Projects = () => {
             transition={{ delay: 0.2, duration: 0.5 }}
             variants={container}
           >
-            <img className={gifStyles} src={projects.Movie_1} alt={"GIF"} />
-            <img className={gifStyles} src={projects.Movie_2} alt={"GIF"} />
-            <img className={gifStyles} src={projects.Movie_3} alt={"GIF"} />
-            <img className={gifStyles} src={projects.Movie_4} alt={"GIF"} />
-            <img className={gifStyles} src={projects.Movie_5} alt={"GIF"} />
+            <VideoPlayer video={projects.Movie_1} />
+            <VideoPlayer video={projects.Movie_2} />
+            <VideoPlayer video={projects.Movie_3} />
+            <VideoPlayer video={projects.Movie_4} />
+            <VideoPlayer video={projects.Movie_5} />
           </motion.div>
         </div>
       </div>

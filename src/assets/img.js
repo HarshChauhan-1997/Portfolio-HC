@@ -5,11 +5,11 @@ import project_4 from "./project-4.jpeg"
 import project_5 from "./project-5.jpeg"
 import project_6 from "./project-6.jpeg"
 import project_7 from "./project-7.jpeg"
-import Movie_1 from "./Movie-1.gif"
-import Movie_2 from "./Movie-2.gif"
-import Movie_3 from "./Movie-3.gif"
-import Movie_4 from "./Movie-4.gif"
-import Movie_5 from "./Movie-5.gif"
+import Movie_1 from "./movie_1.mp4"
+import Movie_2 from "./movie_2.mp4"
+import Movie_3 from "./movie_3.mp4"
+import Movie_4 from "./movie_4.mp4"
+import Movie_5 from "./movie_5.mp4"
 
 export const projects = {
   project_1,
