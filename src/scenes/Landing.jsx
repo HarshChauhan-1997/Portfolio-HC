@@ -3,7 +3,7 @@ import UseMediaQuery from "../Hooks/UseMediaQuery"
 import { motion } from "framer-motion"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import SocialMediaIcons from "../Component/SocialMediaIcons"
-import ProfileImage from "../assets/profile-image.png"
+import ProfileImage from "../assets/profile.jpg"
 import brush from "../assets/brush.png"
 
 const Landing = ({ setSelectedPage }) => {
@@ -19,7 +19,7 @@ const Landing = ({ setSelectedPage }) => {
           {isAboveMediumScreens ? (
             <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]">
               <img
-                className="hover:filter hover:saturate-200 duration-500 transition ease z-10 w-full max-w-[200px] md:max-w-[500px]"
+                className="hover:filter rounded-tl-[250px] rounded-tr-[250px] border hover:saturate-200 duration-500 transition rounded-e-md ease z-10 w-full max-w-[200px] md:max-w-[500px]"
                 src={ProfileImage}
                 alt="Profile"
               />

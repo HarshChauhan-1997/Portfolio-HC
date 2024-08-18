@@ -106,30 +106,30 @@ const Projects = () => {
             subtitle="Netflix Project: Build by using tailwind css library. Main focus to learn tailwind css as well as make responsive web by using tailwind."
             to="/Netflix"
           />
-          <Project
-            title="Project 2"
-            links="Click Me"
-            GD={projects.project_2}
-            subtitle="Amazon Project: Build by using simple HTML & CSS. Main focus to learn website design by using simple HTML & CSS. first project."
-            href="https://amazon-clone-liart-one.vercel.app/"
-          />
+          {/*<Project*/}
+          {/*  title="Project 2"*/}
+          {/*  links="Click Me"*/}
+          {/*  GD={projects.project_2}*/}
+          {/*  subtitle="Amazon Project: Build by using simple HTML & CSS. Main focus to learn website design by using simple HTML & CSS. first project."*/}
+          {/*  href="https://amazon-clone-liart-one.vercel.app/"*/}
+          {/*/>*/}
 
           {/* ROW-2 */}
+          {/*<Project*/}
+          {/*  title="Project 3"*/}
+          {/*  GD={projects.project_3}*/}
+          {/*  subtitle="Note Taking: in this project use simple java script to create logical properties with html & css combinations."*/}
+          {/*  to="/NoteTaking"*/}
+          {/*/>*/}
           <Project
-            title="Project 3"
-            GD={projects.project_3}
-            subtitle="Note Taking: in this project use simple java script to create logical properties with html & css combinations."
-            to="/NoteTaking"
-          />
-          <Project
-            title="Project 4"
+            title="Project 2"
             links="Click Me"
             GD={projects.project_4}
             subtitle="MovieApp: Explore the world of cinema with my React Native movie app, powered by Redux and Redux Saga for advanced state management. Integrated with the TMDB API, it offers personalized recommendations, intuitive navigation, and advanced search options. Bookmark your favorites and enjoy a seamless movie-watching experience on the go."
             href="https://drive.google.com/file/d/1wGDC8wYchULuOfz-1BaT7S4e8bXzHYVi/view?usp=sharing"
           />
           <Project
-            title="Project 5"
+            title="Project 3"
             links="Click Me"
             GD={projects.project_5}
             subtitle="Animated Web: In this project use css to build animated properties of web as well as use java script to create animated properties."
@@ -137,14 +137,14 @@ const Projects = () => {
           />
 
           {/* ROW-3 */}
+          {/*<Project*/}
+          {/*  title="Project 6"*/}
+          {/*  GD={projects.project_6}*/}
+          {/*  subtitle="Logical Project: Random Password Generation and RandomColor Generation Projects : Main focus of those projects are to build batter understanding of the hooks of react, state changes, virtual dom, fiber and logical programming"*/}
+          {/*  to="/Logical/1"*/}
+          {/*/>*/}
           <Project
-            title="Project 6"
-            GD={projects.project_6}
-            subtitle="Logical Project: Random Password Generation and RandomColor Generation Projects : Main focus of those projects are to build batter understanding of the hooks of react, state changes, virtual dom, fiber and logical programming"
-            to="/Logical/1"
-          />
-          <Project
-            title="Project 7"
+            title="Project 4"
             GD={projects.project_7}
             subtitle="Portfolio: finally, after all of this project time to build portfolio. for this i use ref: ${} to build this portfolio. by this project i properly understand of react-dom and fiber modules. using parameter's in functions and hooks."
             to="/"
