@@ -11,6 +11,7 @@ export default {
         "deep-blue": "#010026",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
+        'navy': '#0A0A29',
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":

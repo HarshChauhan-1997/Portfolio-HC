@@ -17,6 +17,7 @@ import Button from "./Projects/RandomColor/Button"
 import RandomColor from "./Projects/RandomColor/RandomColor"
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import NoteTaking from "./Projects/NoteTaking/NoteTaking"
+import ProjectWork from "./scenes/ProjectWork"
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home")
@@ -66,6 +67,10 @@ function App() {
                 <LineGradient />
                 <div className="w-5/6 mx-auto">
                   <Projects />
+                </div>
+                <LineGradient />
+                <div className="w-5/6 mx-auto">
+                  <ProjectWork />
                 </div>
                 <LineGradient />
                 <div className="w-5/6 mx-auto md:h-full">

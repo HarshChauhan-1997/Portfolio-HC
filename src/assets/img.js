@@ -10,6 +10,8 @@ import Movie_2 from "./movie_2.mp4"
 import Movie_3 from "./movie_3.mp4"
 import Movie_4 from "./movie_4.mp4"
 import Movie_5 from "./movie_5.mp4"
+import LiveList from "./LiveList.jpg"
+import Scorecard from "./Scorecard.png"
 
 export const projects = {
   project_1,
@@ -24,4 +26,6 @@ export const projects = {
   Movie_3,
   Movie_4,
   Movie_5,
+  LiveList,
+  Scorecard
 }
