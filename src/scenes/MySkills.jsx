@@ -1,11 +1,11 @@
-import React from "react"
-import UseMediaQuery from "../Hooks/UseMediaQuery"
-import LineGradient from "../Component/LineGradient"
-import { motion } from "framer-motion"
-import skills from "../assets/skills-image.png"
+import React from 'react'
+import UseMediaQuery from '../Hooks/UseMediaQuery'
+import LineGradient from '../Component/LineGradient'
+import { motion } from 'framer-motion'
+import skills from '../assets/skills-image.png'
 
 const MySkills = () => {
-  const isAboveMediumScreens = UseMediaQuery("(min-width:1060px)")
+  const isAboveMediumScreens = UseMediaQuery('(min-width:1060px)')
   return (
     <section id="skills" className="pt-10 pb-24">
       {/* HAEDER AND IMG SECTION */}
@@ -27,17 +27,17 @@ const MySkills = () => {
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
             <span className="text-blue">React-JS</span>
-            {" | "}
+            {' | '}
             <span className="text-red">React-Native</span>
-            {" | "}
+            {' | '}
             <span className="text-yellow">
               HTML5, CSS3, JavaScript, Tailwind
             </span>
-            {" | "}
+            {' | '}
             <span className="text-blue">API, Redux, Redux_Saga, GraphQL</span>
-            {" | "}
+            {' | '}
             <span className="text-red">Node.js, MongoDB</span>
-            {" | "}
+            {' | '}
             <span className="text-yellow">Xcode, Android Studio</span>
           </p>
         </motion.div>
@@ -95,13 +95,14 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            I have extensive experience in React and React Native, having
-            contributed to projects such as a voice clone web application and
-            logic development in React JS, as well as the development of 'Zive:
-            Health' and 'prev: salon' app. Additionally, I created my own
-            MovieApp using React Native, honing my logical thinking, coding
-            standards, and design skills. Throughout these endeavors, I adeptly
-            utilized tools like Jira, Git, and Bitbucket. (Git-repo:{" "}
+            Specialized in React Native development with proven expertise in
+            building complex mobile applications. Recently developed a
+            comprehensive Cricket App featuring real-time score updates, complex
+            UI implementations, and cross-platform subscription systems.
+            Previously contributed to Voice Clone (web app), Ziva (health app),
+            and Priv (salon app). Proficient in implementing sophisticated
+            features like real-time data synchronization, optimized API
+            architectures, and platform-specific functionalities. (Git-repo:{' '}
             <a
               className="text-blue underline"
               target="_blank"
@@ -110,7 +111,7 @@ const MySkills = () => {
             >
               MovieApp
             </a>
-            ,{" "}
+            ,{' '}
             <a
               className="text-blue underline"
               target="_blank"
@@ -142,7 +143,6 @@ const MySkills = () => {
                 <div className="mt-3">
                   <svg
                     width="10%"
-                    // height="800px"
                     viewBox="0 -6 256 256"
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="xMidYMid"
@@ -155,20 +155,19 @@ const MySkills = () => {
                 </div>
               </div>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                API / Redux / Redux-Saga / GraphQL
+                State Management & API Integration
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            I have actively engaged in API integration, proficiently employing
-            methods such as GET, POST, PUT, and DELETE. Utilizing tools like
-            Postman, I ensured seamless testing and validation of APIs.
-            Furthermore, I adeptly managed API calls through Redux and
-            middleware, primarily leveraging Redux-Saga. My experience
-            predominantly revolves around GraphQL APIs, where I've demonstrated
-            proficiency in data fetching and manipulation for efficient
-            application development.
+            Expert in implementing complex state management solutions using
+            Redux and Redux-Saga. Developed optimized API architectures with
+            rate limiting for the Cricket App, preventing Firestore quota
+            exhaustion. Proficient in RESTful APIs and GraphQL, implementing
+            efficient data synchronization strategies. Experience in building
+            robust error handling, caching mechanisms, and real-time data
+            updates using Firebase/Firestore.
           </p>
         </motion.div>
 
@@ -188,20 +187,20 @@ const MySkills = () => {
             <div className="">
               <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Xcode / Android Studio
+                Platform Development & Deployment
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            My portfolio also encompasses experience with industry-standard
-            build tools such as Xcode for iOS development and Android Studio for
-            Android applications. I have adeptly navigated Xcode's TestFlight
-            and certification processes, ensuring seamless testing and
-            deployment of iOS apps. Additionally, my proficiency extends to the
-            Google Play Console, where I've successfully uploaded test apps for
-            beta (internal testing) as well as production releases, guaranteeing
-            a smooth user experience across platforms.
+            Extensive experience in cross-platform mobile development with
+            expertise in both iOS and Android platforms. Proficient in
+            implementing platform-specific features including in-app purchases
+            and subscription systems. Skilled in deployment processes using
+            Xcode's TestFlight for iOS and Google Play Console for Android,
+            managing beta testing, and production releases. Experience in
+            handling app certifications, signing, and maintaining deployment
+            workflows.
           </p>
         </motion.div>
       </div>

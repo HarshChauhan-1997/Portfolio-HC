@@ -1,8 +1,7 @@
-import React from "react"
-import LineGradient from "../Component/LineGradient"
-import CV from "../assets/CV.jpg"
-import { motion } from "framer-motion"
-import { Link } from "react-router-dom"
+import React from 'react'
+import LineGradient from '../Component/LineGradient'
+import CV from '../assets/CV.jpg'
+import { motion } from 'framer-motion'
 
 const Testimonials = () => {
   const testimonialsStyle = `mx-auto relative max-w-[400px] h-[250px] flex flex-col justify-end p-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`
@@ -25,7 +24,7 @@ const Testimonials = () => {
       </motion.div>
 
       {/* TESTIMONIALS */}
-      <img className="w-full h-full" src={CV} alt={"CV"} />
+      <img className="w-full h-full" src={CV} alt={'CV'} />
       {/*<div className="md:flex md:justify-between gap-8">*/}
       {/*  <motion.div*/}
       {/*    className={`bg-blue ${testimonialsStyle} before:content-person1`}*/}

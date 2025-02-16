@@ -1,14 +1,12 @@
-import AnchorLink from "react-anchor-link-smooth-scroll"
-import UseMediaQuery from "../Hooks/UseMediaQuery"
-import { useState } from "react"
-import MenuIcon from "../assets/menu-icon.svg"
-import CloseMenuIcon from "../assets/close-icon.svg"
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import UseMediaQuery from '../Hooks/UseMediaQuery'
+import { useState } from 'react'
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase()
   return (
     <AnchorLink
-      className={`${selectedPage === lowerCasePage ? "text-yellow" : ""} hover:text-yellow duration-500 transition`}
+      className={`${selectedPage === lowerCasePage ? 'text-yellow' : ''} hover:text-yellow duration-500 transition`}
       href={`#${lowerCasePage}`}
       onClick={() => {
         setSelectedPage(lowerCasePage)
@@ -21,8 +19,8 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggle, setIsMenuToggle] = useState(false)
-  const isAboveSmallScreen = UseMediaQuery("(min-width: 768px)")
-  const navBarBG = isTopOfPage ? "" : "bg-red"
+  const isAboveSmallScreen = UseMediaQuery('(min-width: 768px)')
+  const navBarBG = isTopOfPage ? '' : 'bg-red'
 
   return (
     <>
@@ -52,11 +50,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               />
               <Link
                 page="Cv"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="Contact"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
@@ -124,11 +117,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 />
                 <Link
                   page="Testimonials"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                />
-                <Link
-                  page="Contact"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                 />

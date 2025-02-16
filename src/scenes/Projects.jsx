@@ -1,9 +1,10 @@
-import React from "react"
-import LineGradient from "../Component/LineGradient"
-import { motion } from "framer-motion"
-import { Link } from "react-router-dom"
-import { projects } from "../assets/img.js"
-import { VideoPlayer } from "../utils/VideoPlayer.jsx"
+import React from 'react'
+import LineGradient from '../Component/LineGradient'
+import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
+import { projects } from '../assets/img.js'
+import { VideoPlayer } from '../utils/VideoPlayer.jsx'
+import ProjectWork from './ProjectWork.jsx'
 
 const container = {
   hidden: {},
@@ -17,14 +18,14 @@ const projectVariants = {
 }
 
 const Project = ({ title, links, href, subtitle, to, GD }) => {
-  const projectTitle = title.split(" ").join("-").toLowerCase()
+  const projectTitle = title.split(' ').join('-').toLowerCase()
   const overLayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition durations-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`
 
   return (
     <motion.div variants={projectVariants} className="relative">
       <div className={overLayStyles}>
         <p className="text-2xl font-playfair underline">
-          <Link to={to}>{title}</Link>{" "}
+          <Link to={to}>{title}</Link>{' '}
           <a
             className="text-sm font-bold bg-red text-white rounded-[5px]"
             href={href}
@@ -65,95 +66,34 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          In my coding journey, I embarked by mastering HTML and CSS, crafting
-          clones of popular platforms like Netflix and Amazon. These initial
-          projects honed my skills in front-end development. As I delved deeper,
-          I ventured into JavaScript, constructing various logical projects to
-          sharpen my programming acumen.
+          My development journey began with mastering core web technologies -
+          HTML, CSS, and JavaScript. Through hands-on projects and platform
+          clones, I built a strong foundation in frontend development while
+          exploring modern frameworks and best practices.
           <br />
           <br />
-          Transitioning into real-world applications, I contributed to projects
-          like Ziva and Priv: Salon App, where I immersed myself in React and
-          React Native, seamlessly integrating Redux and Redux Saga.
-          Additionally, I adeptly managed backend processes, leveraging Node.js
-          and MongoDB to handle data storage and retrieval.
+          Diving deep into mobile development, I specialized in React Native,
+          creating sophisticated applications with complex state management
+          using Redux and Redux Saga. My expertise expanded to implementing
+          advanced features like real-time data synchronization with Firestore,
+          optimized API integrations, and platform-specific implementations for
+          both iOS and Android.
           <br />
           <br />
-          Continuing to expand my repertoire, I ventured into creating my own
-          Movie App project, consolidating my expertise in full-stack
-          development and further solidifying my grasp on modern web
-          technologies.
+          Most recently, I developed a comprehensive Cricket App that showcases
+          my proficiency in building production-ready mobile applications. This
+          project features real-time score updates, complex UI implementations,
+          efficient data management, and cross-platform subscription systems. I
+          implemented sophisticated features like rate-limited API calls,
+          pagination systems, and platform-specific in-app purchase flows,
+          demonstrating my ability to handle complex mobile development
+          challenges.
         </p>
       </motion.div>
 
+      <ProjectWork />
+
       {/* PROJECTS */}
-      <div className="flex justify-center flex-col gap-14 items-center">
-        <motion.div
-          className="sm:grid sm:grid-cols-3"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          variants={container}
-        >
-          {/* ROW-1 */}
-          <div className="flex justify-center items-center text-center p-10 bg-red max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
-            BEAUTIFUL USER INTERFACES
-          </div>
-          <Project
-            title="Project 1"
-            GD={projects.project_1}
-            subtitle="Netflix Project: Build by using tailwind css library. Main focus to learn tailwind css as well as make responsive web by using tailwind."
-            to="/Netflix"
-          />
-          {/*<Project*/}
-          {/*  title="Project 2"*/}
-          {/*  links="Click Me"*/}
-          {/*  GD={projects.project_2}*/}
-          {/*  subtitle="Amazon Project: Build by using simple HTML & CSS. Main focus to learn website design by using simple HTML & CSS. first project."*/}
-          {/*  href="https://amazon-clone-liart-one.vercel.app/"*/}
-          {/*/>*/}
-
-          {/* ROW-2 */}
-          {/*<Project*/}
-          {/*  title="Project 3"*/}
-          {/*  GD={projects.project_3}*/}
-          {/*  subtitle="Note Taking: in this project use simple java script to create logical properties with html & css combinations."*/}
-          {/*  to="/NoteTaking"*/}
-          {/*/>*/}
-          <Project
-            title="Project 2"
-            links="Click Me"
-            GD={projects.project_4}
-            subtitle="MovieApp: Explore the world of cinema with my React Native movie app, powered by Redux and Redux Saga for advanced state management. Integrated with the TMDB API, it offers personalized recommendations, intuitive navigation, and advanced search options. Bookmark your favorites and enjoy a seamless movie-watching experience on the go."
-            href="https://drive.google.com/file/d/1wGDC8wYchULuOfz-1BaT7S4e8bXzHYVi/view?usp=sharing"
-          />
-          <Project
-            title="Project 3"
-            links="Click Me"
-            GD={projects.project_5}
-            subtitle="Animated Web: In this project use css to build animated properties of web as well as use java script to create animated properties."
-            href="https://animated-website-lilac.vercel.app/"
-          />
-
-          {/* ROW-3 */}
-          {/*<Project*/}
-          {/*  title="Project 6"*/}
-          {/*  GD={projects.project_6}*/}
-          {/*  subtitle="Logical Project: Random Password Generation and RandomColor Generation Projects : Main focus of those projects are to build batter understanding of the hooks of react, state changes, virtual dom, fiber and logical programming"*/}
-          {/*  to="/Logical/1"*/}
-          {/*/>*/}
-          <Project
-            title="Project 4"
-            GD={projects.project_7}
-            subtitle="Portfolio: finally, after all of this project time to build portfolio. for this i use ref: ${} to build this portfolio. by this project i properly understand of react-dom and fiber modules. using parameter's in functions and hooks."
-            to="/"
-          />
-          <div className="flex justify-center items-center text-center p-10 bg-blue max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
-            SMOOTH USER EXPERIENCE
-          </div>
-        </motion.div>
-      </div>
       <div className="flex flex-col gap-5">
         <motion.div
           className="md:w-2/5 mx-auto text-center"

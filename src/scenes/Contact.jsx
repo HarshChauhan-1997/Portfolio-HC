@@ -1,9 +1,8 @@
-import React from "react"
-import UseMediaQuery from "../Hooks/UseMediaQuery"
-import LineGradient from "../Component/LineGradient"
-import { motion } from "framer-motion"
-import { useForm } from "react-hook-form"
-import ContactImg from "../assets/contact-image.jpeg"
+import React from 'react'
+import LineGradient from '../Component/LineGradient'
+import { motion } from 'framer-motion'
+import { useForm } from 'react-hook-form'
+import ContactImg from '../assets/contact-image.jpeg'
 
 const Contact = () => {
   const {
@@ -77,12 +76,12 @@ const Contact = () => {
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
               type="text"
               placeholder="NAME"
-              {...register("name", { required: true, maxLength: 100 })}
+              {...register('name', { required: true, maxLength: 100 })}
             />
             {errors.name && (
               <p className="text-red mt-1">
-                {errors.name.type === "required" && "This field is required."}
-                {errors.name.type === "maxLength" && "Max length is 100 char."}
+                {errors.name.type === 'required' && 'This field is required.'}
+                {errors.name.type === 'maxLength' && 'Max length is 100 char.'}
               </p>
             )}
 
@@ -90,16 +89,16 @@ const Contact = () => {
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
               placeholder="EMAIL"
-              {...register("email", {
+              {...register('email', {
                 required: true,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
               })}
             />
             {errors.email && (
               <p className="text-red mt-1">
-                {errors.email.type === "required" && "This field is required."}
-                {errors.email.type === "pattern" &&
-                  "Please enter a valid email address"}
+                {errors.email.type === 'required' && 'This field is required.'}
+                {errors.email.type === 'pattern' &&
+                  'Please enter a valid email address'}
               </p>
             )}
 
@@ -109,14 +108,14 @@ const Contact = () => {
               placeholder="MESSAGE"
               rows="4"
               cols="50"
-              {...register("message", { required: true, maxLength: 2000 })}
+              {...register('message', { required: true, maxLength: 2000 })}
             />
             {errors.message && (
               <p className="text-red mt-1">
-                {errors.message.type === "required" &&
-                  "This field is required."}
-                {errors.message.type === "maxLength" &&
-                  "Max length is 2000 char."}
+                {errors.message.type === 'required' &&
+                  'This field is required.'}
+                {errors.message.type === 'maxLength' &&
+                  'Max length is 2000 char.'}
               </p>
             )}
             <button

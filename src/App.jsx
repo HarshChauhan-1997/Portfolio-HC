@@ -1,27 +1,24 @@
-import { useEffect, useState } from "react"
-import DotGroup from "./scenes/DotGroup"
-import Landing from "./scenes/Landing"
-import React from "react"
-import UseMediaQuery from "./Hooks/UseMediaQuery"
-import Navbar from "./scenes/Navbar"
-import LineGradient from "./Component/LineGradient"
-import MySkills from "./scenes/MySkills"
-import Projects from "../src/scenes/Projects"
-import Testimonials from "./scenes/Testimonials"
-import Contact from "./scenes/Contact"
-import Footer from "./scenes/Footer"
-import Netflix from "./Projects/Netflix/Netflix"
-import Pass from "./Projects/PasswordGenarator/Pass"
-import Passnew from "./Projects/PasswordGenarator/Passnew"
-import Button from "./Projects/RandomColor/Button"
-import RandomColor from "./Projects/RandomColor/RandomColor"
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-import NoteTaking from "./Projects/NoteTaking/NoteTaking"
-import ProjectWork from "./scenes/ProjectWork"
+import React, { useEffect, useState } from 'react'
+import DotGroup from './scenes/DotGroup'
+import Landing from './scenes/Landing'
+import UseMediaQuery from './Hooks/UseMediaQuery'
+import Navbar from './scenes/Navbar'
+import LineGradient from './Component/LineGradient'
+import MySkills from './scenes/MySkills'
+import Projects from '../src/scenes/Projects'
+import Testimonials from './scenes/Testimonials'
+import Footer from './scenes/Footer'
+import Netflix from './Projects/Netflix/Netflix'
+import Pass from './Projects/PasswordGenarator/Pass'
+import Passnew from './Projects/PasswordGenarator/Passnew'
+import Button from './Projects/RandomColor/Button'
+import RandomColor from './Projects/RandomColor/RandomColor'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import NoteTaking from './Projects/NoteTaking/NoteTaking'
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState("home")
-  const isAboveMediumScreen = UseMediaQuery("(min-width: 1060px)")
+  const [selectedPage, setSelectedPage] = useState('home')
+  const isAboveMediumScreen = UseMediaQuery('(min-width: 1060px)')
   const [isTopOfPage, setIsTopOfPage] = useState(true)
 
   useEffect(() => {
@@ -34,8 +31,8 @@ function App() {
       // if (window.scrollY == 2000) setSelectedPage('testimonials');
       // if (window.scrollY == 3000) setSelectedPage('content');
     }
-    window.addEventListener("scroll", handelScroll)
-    return () => window.removeEventListener("scroll", handelScroll)
+    window.addEventListener('scroll', handelScroll)
+    return () => window.removeEventListener('scroll', handelScroll)
   }, [])
 
   return (
@@ -69,16 +66,8 @@ function App() {
                   <Projects />
                 </div>
                 <LineGradient />
-                <div className="w-5/6 mx-auto">
-                  <ProjectWork />
-                </div>
-                <LineGradient />
                 <div className="w-5/6 mx-auto md:h-full">
                   <Testimonials />
-                </div>
-                <LineGradient />
-                <div className="w-5/6 mx-auto md:h-full">
-                  <Contact />
                 </div>
                 <LineGradient />
                 <div>

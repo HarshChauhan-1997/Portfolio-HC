@@ -1,10 +1,11 @@
-import React, { useState } from "react"
-import Header from "./Header"
-import WriteNote from "./WriteNote"
-import AddNote from "./Addnote"
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import React, { useState } from 'react'
+import Header from './Header'
+import WriteNote from './WriteNote'
+import AddNote from './Addnote'
+import { Link } from 'react-router-dom'
+
 ;() => {
-  const backData = JSON.parse(localStorage.getItem("Note"))
+  const backData = JSON.parse(localStorage.getItem('Note'))
   const saveTitle = []
   const saveContent = []
   backData.forEach((note) => {
@@ -30,7 +31,7 @@ const NoteTaking = () => {
         data.push(note)
       })
     }
-    localStorage.setItem("Note", JSON.stringify(data))
+    localStorage.setItem('Note', JSON.stringify(data))
   }
 
   const deletNote = (id) => {

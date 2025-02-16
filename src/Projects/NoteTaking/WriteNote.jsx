@@ -1,9 +1,9 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
 const WriteNote = (props) => {
   const [note, setNote] = useState({
-    title: "",
-    content: "",
+    title: '',
+    content: '',
   })
 
   const dataInput = (event) => {
@@ -20,8 +20,8 @@ const WriteNote = (props) => {
     save()
     props.passNote(note)
     setNote({
-      title: "",
-      content: "",
+      title: '',
+      content: '',
     })
   }
 

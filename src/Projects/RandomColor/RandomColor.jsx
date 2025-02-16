@@ -1,12 +1,12 @@
-import React, { useState } from "react"
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const RandomColor = () => {
-  const [color, setColor] = useState("Yellow")
+  const [color, setColor] = useState('Yellow')
 
   const code = Math.floor(Math.random() * 16777215)
   console.log(code)
-  const newCode = "#" + code.toString(16)
+  const newCode = '#' + code.toString(16)
   console.log(newCode)
 
   return (

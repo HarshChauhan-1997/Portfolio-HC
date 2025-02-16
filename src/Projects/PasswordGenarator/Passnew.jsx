@@ -1,17 +1,17 @@
-import React, { useCallback, useState, useEffect, useRef } from "react"
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Passnew = () => {
   const [length, setLength] = useState(8)
   const [numbers, setNumbers] = useState(false)
   const [symbol, setSymbol] = useState(false)
-  const [password, setPassword] = useState("")
+  const [password, setPassword] = useState('')
 
   const Password = useCallback(() => {
-    let pass = ""
-    let str = "ABCDEFGHIGKLMNOPQRSTWXYZabcdefghigklmnopqrstwxyz"
-    if (numbers) str += "0123456789"
-    if (symbol) str += "!@#$%^&*()"
+    let pass = ''
+    let str = 'ABCDEFGHIGKLMNOPQRSTWXYZabcdefghigklmnopqrstwxyz'
+    if (numbers) str += '0123456789'
+    if (symbol) str += '!@#$%^&*()'
     for (let i = 1; i <= length; i++) {
       let char = Math.floor(Math.random() * str.length + 1)
       console.log(char)

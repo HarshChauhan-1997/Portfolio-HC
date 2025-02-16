@@ -1,5 +1,5 @@
-import React, { useCallback, useEffect, useRef, useState } from "react"
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Pass = () => {
   const [uppercase, setUppercase] = useState(true)
@@ -7,16 +7,16 @@ const Pass = () => {
   const [numbers, setNumbers] = useState(false)
   const [symbols, setSymbols] = useState(false)
   const [length, setLength] = useState(8)
-  const [password, setPassword] = useState("")
+  const [password, setPassword] = useState('')
 
-  const Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  const Lower = "abcdefghijklmnopqrstuvwxyz"
-  const Numbers = "0123456789"
-  const Symbols = "!@#$%&()*+,-./"
+  const Upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  const Lower = 'abcdefghijklmnopqrstuvwxyz'
+  const Numbers = '0123456789'
+  const Symbols = '!@#$%&()*+,-./'
 
   const PassGenerator = useCallback(() => {
-    let newPass = ""
-    let str = ""
+    let newPass = ''
+    let str = ''
     if (uppercase) str += Upper
     if (lowercase) str += Lower
     if (numbers) str += Numbers

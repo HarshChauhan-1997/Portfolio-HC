@@ -1,5 +1,5 @@
-import React from "react"
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import React from 'react'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 const Netflix = () => {
   return (
@@ -70,7 +70,7 @@ const Netflix = () => {
                 placeholder="Email address"
               />
               <button className="bg-[#ef3f3f] sm:text-[25px] p-[10px_20px] font-bold sm:p-[9px_35px] text-center rounded-[5px] hover:bg-[#C11119] ease-in duration-[0.2s]">
-                Get Started{" "}
+                Get Started{' '}
               </button>
             </div>
           </div>

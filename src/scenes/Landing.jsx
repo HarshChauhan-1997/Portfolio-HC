@@ -1,13 +1,13 @@
-import React from "react"
-import UseMediaQuery from "../Hooks/UseMediaQuery"
-import { motion } from "framer-motion"
-import AnchorLink from "react-anchor-link-smooth-scroll"
-import SocialMediaIcons from "../Component/SocialMediaIcons"
-import ProfileImage from "../assets/profile.jpg"
-import brush from "../assets/brush.png"
+import React from 'react'
+import UseMediaQuery from '../Hooks/UseMediaQuery'
+import { motion } from 'framer-motion'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import SocialMediaIcons from '../Component/SocialMediaIcons'
+import ProfileImage from '../assets/profile.jpg'
+import brush from '../assets/brush.png'
 
 const Landing = ({ setSelectedPage }) => {
-  const isAboveMediumScreens = UseMediaQuery("(min-width:1060px)")
+  const isAboveMediumScreens = UseMediaQuery('(min-width:1060px)')
   return (
     <>
       <section
@@ -47,7 +47,7 @@ const Landing = ({ setSelectedPage }) => {
             }}
           >
             <p className="text-5xl font-playfair z-10 text-center md:text-start">
-              Harsh {""}
+              Harsh {''}
               <span className="xs:relative xs:text-deep-blue xs:font-semibold z-20">
                 <img
                   className="absolute max-w-[250px] -left-[25px] -top-[78px] z-[-1]"
@@ -58,29 +58,34 @@ const Landing = ({ setSelectedPage }) => {
               </span>
             </p>
             <p className="mt-10 mb-7 text-sm text-center md:text-start">
-              With over a year of dedicated experience in the software
-              development domain, I specialize in crafting seamless solutions
-              using a plethora of cutting-edge technologies. My proficiency lies
-              in React.js, React Native, Redux, Redux Saga, GraphQL, Postman,
-              Node.js, API integration, and MongoDB. Throughout my journey, I've
-              had the privilege of contributing to four notable projects, each
-              showcasing my commitment to excellence and innovation.
+              As a specialized React Native developer with over a year of
+              hands-on experience, I excel in building sophisticated mobile
+              applications that combine complex functionality with seamless user
+              experiences. My technical expertise spans across modern
+              development technologies, including React Native, Redux, Redux
+              Saga, and Firebase/Firestore, complemented by strong proficiency
+              in RESTful APIs and GraphQL integrations.
               <br />
               <br />
-              One of my significant contributions includes Voice Clone, a robust
-              web application aimed at revolutionizing user experiences.
-              Additionally, I've lent my expertise to Priv, an intuitive salon
-              application, and Ziva, a pioneering health app designed to enhance
-              wellness journeys. Moreover, my involvement in MovieApp
-              underscores my versatility and adaptability across diverse project
-              scopes.
+              My recent achievement includes developing a comprehensive Cricket
+              App, where I implemented advanced features such as real-time score
+              synchronization, optimized API architectures, and
+              platform-specific subscription systems. This project showcases my
+              ability to handle complex state management, efficient data flow
+              optimization, and cross-platform development challenges. I've also
+              contributed to other significant projects including Voice Clone,
+              Priv (salon application), and Ziva (health app), each utilizing
+              cutting-edge technologies and best practices.
               <br />
-              <br />
-              Driven by a relentless pursuit of knowledge, I am committed to
-              continuous learning and staying abreast of emerging technologies.
-              This proactive approach ensures that I remain at the forefront of
-              industry trends, enabling me to deliver unparalleled solutions
-              that exceed expectations.
+              <br />I take pride in writing clean, maintainable code and
+              implementing sophisticated features like rate-limited API calls,
+              pagination systems, and platform-specific in-app purchases. My
+              approach focuses on creating optimized, scalable solutions while
+              ensuring excellent performance and user experience across both iOS
+              and Android platforms. Committed to continuous learning, I stay
+              updated with the latest mobile development trends and best
+              practices to deliver innovative solutions that exceed
+              expectations.
             </p>
           </motion.div>
 
@@ -98,7 +103,7 @@ const Landing = ({ setSelectedPage }) => {
           >
             <AnchorLink
               className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500"
-              onClick={() => setSelectedPage("contact")}
+              onClick={() => setSelectedPage('contact')}
               href="#contact"
             >
               Contact Me
@@ -106,7 +111,7 @@ const Landing = ({ setSelectedPage }) => {
 
             <AnchorLink
               className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-              onClick={() => setSelectedPage("contact")}
+              onClick={() => setSelectedPage('contact')}
               href="#contact"
             >
               <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
